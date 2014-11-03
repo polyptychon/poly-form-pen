@@ -74,3 +74,11 @@ angular.module('myApp', ['poly-form-pen']);
   cols="50">
 </textarea>
 ```
+
+or...
+
+```html
+<pen ng-model="ComponentsForm.test2" ng-required="true" use-edit-button is-editable>
+  [html]
+</pen>
+```
