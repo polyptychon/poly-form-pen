@@ -62,5 +62,15 @@ angular.module('myApp', ['poly-form-pen']);
 
 ## Documentation
 
-
-
+```html
+<textarea pen="true"
+  class="form-control"
+  name="pen"
+  id="pen27"
+  ng-model="myForm.variable"
+  type="textarea"
+  rows="4"
+  cols="50"
+  ng-required="true">
+</textarea>
+```
