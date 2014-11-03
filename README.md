@@ -9,7 +9,7 @@ You can install this package either with `npm` or with `bower`.
 ### npm
 
 ```shell
-npm install polyptychon/poly-form-pen --save
+npm install --save polyptychon/poly-form-pen
 ```
 
 Add a `<script>` to your `index.html`:
