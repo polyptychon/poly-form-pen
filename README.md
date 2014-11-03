@@ -1,7 +1,3 @@
-# packaged poly-form-pen
-
-This repo is not for distribution on `npm` and `bower`.
-
 # Description
 
 This directive allows you to enhance your textarea elements with behaviour from the [pen](https://github.com/sofish/pen) library.
