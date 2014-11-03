@@ -126,7 +126,7 @@ gulp.task('coffee', function() {
     .pipe(myCoffee());
 });
 
-gulp.task('lib', function() {
+gulp.task('libjs', function() {
   env = PRODUCTION;
   gulp.src('./'+SRC+'/coffee/main.coffee')
     .pipe(plumber({
@@ -148,6 +148,21 @@ gulp.task('lib', function() {
       .pipe(gulpif(env === PRODUCTION, uglify()))
       .pipe(gulpif(env === PRODUCTION, size()))
       .pipe(gulp.dest('_lib'));
+
+
+});
+
+gulp.task('libcss', function() {
+  var config = { errLogToConsole: true };
+  return gulp.src(SRC+'/sass/poly-form-pen.scss')
+    .pipe(duration('sass'))
+    .pipe(plumber({
+      errorHandler: handleError
+    }))
+    .pipe(sass(config).on('error', gutil.log))
+    .pipe(gulpif(env === PRODUCTION, minifyCSS()))
+    .pipe(gulpif(env === PRODUCTION, size()))
+    .pipe(gulp.dest('_lib'));
 });
 
 gulp.task('clean-js', function() {
@@ -298,7 +313,7 @@ gulp.task('test', function() {
 
 gulp.task('default', ['vendor','coffee', 'sass', 'jade']);
 gulp.task('live', ['coffee', 'jade', 'sass', 'watch']);
-
+gulp.task('lib', ['libjs','libcss']);
 gulp.task('build', function() {
   runSequence(['bootstrapFonts','fonts','images','spriteSass','autoVariables'],['coffee','vendor','sass'],['jade']);
 });
