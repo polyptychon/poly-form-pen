@@ -93,6 +93,6 @@ or...
 
 ```html
 <pen ng-model="myForm.variable" ng-required="true" use-edit-button is-editable>
-  [html]
+  <!-- [html] -->
 </pen>
 ```
