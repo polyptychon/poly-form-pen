@@ -78,7 +78,7 @@ angular.module('myApp', ['poly-form-pen']);
 or...
 
 ```html
-<pen ng-model="ComponentsForm.test2" ng-required="true" use-edit-button is-editable>
+<pen ng-model="myForm.variable" ng-required="true" use-edit-button is-editable>
   [html]
 </pen>
 ```
