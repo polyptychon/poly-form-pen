@@ -1,4 +1,4 @@
-poly-pen
+poly-form-pen
 ============
 
 dependencies:

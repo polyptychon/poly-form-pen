@@ -132,7 +132,7 @@ gulp.task('lib', function() {
     .pipe(plumber({
       errorHandler: handleError
     }))
-    .pipe(myCoffee('_lib', 'poly-pen.min.js'));
+    .pipe(myCoffee('_lib', 'poly-form-pen.min.js'));
 
   gulp.src(dependencies)
     return browserify()
@@ -142,7 +142,7 @@ gulp.task('lib', function() {
           console.log(err.message);
           this.end();
         })
-      .pipe(source('poly-pen-lib.min.js'))
+      .pipe(source('poly-form-pen-lib.min.js'))
       .pipe(duration('vendor'))
       .pipe(buffer())
       .pipe(gulpif(env === PRODUCTION, uglify()))

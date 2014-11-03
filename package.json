@@ -1,18 +1,18 @@
 {
-  "name": "poly-pen",
+  "name": "poly-form-pen",
   "version": "0.1.0",
   "description": "Angular wrapper for pen editor",
   "main": "_src/coffee/main.coffee",
-  "main.scss": "_src/sass/poly-pen.scss",
+  "main.scss": "_src/sass/poly-form-pen.scss",
   "author": "Harris Sidiropoulos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/polyptychon/poly-pen/issues"
+    "url": "https://github.com/polyptychon/poly-form-pen/issues"
   },
-  "homepage": "https://github.com/polyptychon/poly-pen",
+  "homepage": "https://github.com/polyptychon/poly-form-pen",
   "repository": {
     "type": "git",
-    "url": "https://github.com/polyptychon/poly-pen.git"
+    "url": "https://github.com/polyptychon/poly-form-pen.git"
   },
   "browserify": {
     "transform": [
