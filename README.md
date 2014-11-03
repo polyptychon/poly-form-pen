@@ -65,12 +65,12 @@ angular.module('myApp', ['poly-form-pen']);
 ```html
 <textarea pen="true"
   class="form-control"
-  name="pen"
-  id="pen27"
   ng-model="myForm.variable"
+  ng-required="true"
+  name="pen"
+  id="pen_id"
   type="textarea"
   rows="4"
-  cols="50"
-  ng-required="true">
+  cols="50">
 </textarea>
 ```
