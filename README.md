@@ -69,7 +69,6 @@ angular.module('myApp', ['poly-form-pen']);
   ng-required="true"
   name="pen"
   id="pen_id"
-  type="textarea"
   rows="4"
   cols="50">
 </textarea>
