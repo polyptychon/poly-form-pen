@@ -23,6 +23,8 @@ npm install --save polyptychon/poly-form-pen
 ```
 Add a stylesheet to your `index.html` head:
 ```html
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
 <link rel="stylesheet" href="/node_modules/poly-form-pen/_lib/poly-form-pen.css">
 ```
 
@@ -53,6 +55,8 @@ bower install polyptychon/poly-form-pen
 
 Add a stylesheet to your `index.html` head:
 ```html
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
 <link rel="stylesheet" href="/bower_components/poly-form-pen/_lib/poly-form-pen.css">
 ```
 
