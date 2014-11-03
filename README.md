@@ -1,6 +1,5 @@
 # packaged poly-form-pen
 
-This repo is for distribution on `npm` and `bower`. 
 
 ## Install
 
