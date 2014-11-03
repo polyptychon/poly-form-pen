@@ -1,8 +1,6 @@
 # packaged poly-form-pen
 
-This repo is for distribution on `npm` and `bower`. The source for this module is in the
-[main polyptychon repo](https://github.com/polyptychon/poly-form-pen).
-Please file issues and pull requests against that repo.
+This repo is for distribution on `npm` and `bower`. 
 
 ## Install
 
