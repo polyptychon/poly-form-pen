@@ -2,6 +2,10 @@
 
 This repo is not for distribution on `npm` and `bower`.
 
+# Description
+
+This directive allows you to enhance your textarea elements with behaviour from the [pen](https://github.com/sofish/pen) library.
+
 ## Install
 
 You can install this package either with `npm` or with `bower`.
