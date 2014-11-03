@@ -21,6 +21,12 @@ You can install this package either with `npm` or with `bower`.
 ```shell
 npm install --save polyptychon/poly-form-pen
 ```
+Add a stylesheet to your `index.html` head:
+```html
+<link rel="stylesheet" href="/node_modules/poly-form-pen/_lib/poly-form-pen.css">
+```
+
+Copy fonts from `/node_modules/poly-form-pen/_src/fonts/` to your assets
 
 Add a `<script>` to your `index.html`:
 
@@ -44,6 +50,13 @@ Note that this package is in CommonJS format, so you can `require('poly-form-pen
 ```shell
 bower install polyptychon/poly-form-pen
 ```
+
+Add a stylesheet to your `index.html` head:
+```html
+<link rel="stylesheet" href="/bower_components/poly-form-pen/_lib/poly-form-pen.css">
+```
+
+Copy fonts from `/bower_components/poly-form-pen/_src/fonts/` to your assets
 
 Add a `<script>` to your `index.html`:
 
