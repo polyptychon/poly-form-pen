@@ -1,0 +1,28 @@
+doctype html
+html(ng-app="poly-form-pen")
+  head
+    include partials/header
+  body
+    .container
+
+      - formName = 'ComponentsForm'
+      form(name=formName, ng-cloak="true")
+        .row
+          .col-md-12
+            .col-md-6
+              label(for="pen27") pen
+              textarea(pen="true" name="pen" id="pen27" ng-model="EditorsForm.test" autocomplete="pen" rows="4" cols="50" ng-required="true" class="form-control")
+            .col-md-6
+              label(for="pen27") textarea
+              textarea(name="pen2" id="pen28" ng-model="EditorsForm.test" autocomplete="pen" type="textarea" rows="4" cols="50" ng-required="true" class="form-control")
+          .col-md-12
+            .col-md-6
+              .well
+                pen(ng-model=formName+'.test2' ng-required="true" use-edit-button is-editable)
+                  include partials/pen-html
+            .col-md-6
+              .well
+                pen(ng-model=formName+'.test2' ng-required="true" placeholder="test" is-editable)
+                  include partials/pen-html
+
+    include partials/footer

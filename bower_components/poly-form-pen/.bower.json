@@ -1,0 +1,14 @@
+{
+  "name": "poly-form-pen",
+  "homepage": "https://github.com/polyptychon/poly-form-pen",
+  "_release": "078da912ca",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "078da912ca21cceae4227d5d2020f2ec6fd4d684"
+  },
+  "_source": "git://github.com/polyptychon/poly-form-pen.git",
+  "_target": "*",
+  "_originalSource": "polyptychon/poly-form-pen",
+  "_direct": true
+}

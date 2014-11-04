@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="poly-form-pen">
+  <head>
+    <title>Example</title>
+    <meta name="description" content="Example">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/poly-form-pen/lib/css/poly-form-pen.css">
+  </head>
+  <body>
+    <div class="container">
+      <form name="ComponentsForm" ng-cloak="true">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <label for="pen27">pen</label>
+              <textarea pen="true" name="pen" id="pen27" ng-model="EditorsForm.test" autocomplete="pen" rows="4" cols="50" ng-required="true" class="form-control"></textarea>
+            </div>
+            <div class="col-md-6">
+              <label for="pen27">textarea</label>
+              <textarea name="pen2" id="pen28" ng-model="EditorsForm.test" autocomplete="pen" type="textarea" rows="4" cols="50" ng-required="true" class="form-control"></textarea>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-6">
+              <div class="well">
+                <pen ng-model="ComponentsForm.test2" ng-required="true" use-edit-button is-editable>
+                  <h2>Enjoy live editing (+markdown)</h2>
+                  <p><b><i>Click to edit, Select to apply effect, click items of toolbar to toggle effects.</i></b></p>
+                  <hr>
+                  <p>
+                    Horizontal-Rule can be inserted by click「...」on the toolbar or just type「... 」/「--- 」/「*** 」at line start. Note that
+                    there's a SPACE at the end of a command.
+                  </p>
+                  <hr>
+                  <p>To link or unlink, please press the<i> ENTER</i> key after you filled the input field with your a link. A<a href="/sofish"> link</a> can be unlink by applying an empty value to the input field.</p>
+                  <p></p>
+                  <ul>
+                    <li>Ordered list and unordered list are supported.</li>
+                    <li>Use the toolbar or use markdown syntax like「<b>1.</b>」,「<b>-</b>」or「<b>*</b>」</li>
+                  </ul>
+                  <blockquote>You can quote text by type「<b>></b>」at line start.</blockquote>
+                  <p>What about add underline to text? "
+                    <u>Stay Hungry, Stay Foolish -<i>Steve Jobs</i></u>".
+                  </p>
+                  <pre>\nA code block is also supported by type 「```」 at line start and press SPACE.</pre>
+                  <p>For more, please checkout:<a href="https://github.com/sofish/pen#readme" target="_blank"> https://github.com/sofish/pen#readme</a></p>
+                </pen>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="well">
+                <pen ng-model="ComponentsForm.test2" ng-required="true" placeholder="test" is-editable>
+                  <h2>Enjoy live editing (+markdown)</h2>
+                  <p><b><i>Click to edit, Select to apply effect, click items of toolbar to toggle effects.</i></b></p>
+                  <hr>
+                  <p>
+                    Horizontal-Rule can be inserted by click「...」on the toolbar or just type「... 」/「--- 」/「*** 」at line start. Note that
+                    there's a SPACE at the end of a command.
+                  </p>
+                  <hr>
+                  <p>To link or unlink, please press the<i> ENTER</i> key after you filled the input field with your a link. A<a href="/sofish"> link</a> can be unlink by applying an empty value to the input field.</p>
+                  <p></p>
+                  <ul>
+                    <li>Ordered list and unordered list are supported.</li>
+                    <li>Use the toolbar or use markdown syntax like「<b>1.</b>」,「<b>-</b>」or「<b>*</b>」</li>
+                  </ul>
+                  <blockquote>You can quote text by type「<b>></b>」at line start.</blockquote>
+                  <p>What about add underline to text? "
+                    <u>Stay Hungry, Stay Foolish -<i>Steve Jobs</i></u>".
+                  </p>
+                  <pre>\nA code block is also supported by type 「```」 at line start and press SPACE.</pre>
+                  <p>For more, please checkout:<a href="https://github.com/sofish/pen#readme" target="_blank"> https://github.com/sofish/pen#readme</a></p>
+                </pen>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--script(src="assets/js/vendor.js")-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+    <script src="bower_components/poly-form-pen/lib/js/poly-form-pen.min.js"></script>
+  </body>
+</html>
