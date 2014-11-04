@@ -2,6 +2,8 @@
 
 This directive allows you to enhance your textarea elements with behaviour from the [pen](https://github.com/sofish/pen) library.
 
+Demo: http://polyptychon.github.io/poly-form-pen/
+
 # Requirements
 
 - [AngularJS](http://angularjs.org/)
