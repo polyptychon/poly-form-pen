@@ -30,7 +30,7 @@ Add a `<script>` to your `index.html`:
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
-
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="/node_modules/poly-form-pen/lib/js/poly-form-pen.min.js"></script>
 ```
 
@@ -59,7 +59,7 @@ Add a `<script>` to your `index.html`:
 ```html
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
-
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="/bower_components/poly-form-pen/lib/js/poly-form-pen.min.js"></script>
 ```
 
