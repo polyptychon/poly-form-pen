@@ -20,10 +20,8 @@ npm install --save polyptychon/poly-form-pen
 Add a stylesheet to your `index.html` head:
 ```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="/node_modules/poly-form-pen/_lib/poly-form-pen.css">
+<link rel="stylesheet" href="/node_modules/poly-form-pen/_lib/css/poly-form-pen.css">
 ```
-
-Copy fonts from `/node_modules/poly-form-pen/_src/fonts/` to your assets
 
 Add a `<script>` to your `index.html`:
 
@@ -31,7 +29,7 @@ Add a `<script>` to your `index.html`:
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
 
-<script src="/node_modules/poly-form-pen/_lib/poly-form-pen.min.js"></script>
+<script src="/node_modules/poly-form-pen/_lib/js/poly-form-pen.min.js"></script>
 ```
 
 Then add `poly-form-pen` as a dependency for your app:
@@ -51,10 +49,8 @@ bower install polyptychon/poly-form-pen
 Add a stylesheet to your `index.html` head:
 ```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="/bower_components/poly-form-pen/_lib/poly-form-pen.css">
+<link rel="stylesheet" href="/bower_components/poly-form-pen/_lib/css/poly-form-pen.css">
 ```
-
-Copy fonts from `/bower_components/poly-form-pen/_src/fonts/` to your assets
 
 Add a `<script>` to your `index.html`:
 
@@ -62,7 +58,7 @@ Add a `<script>` to your `index.html`:
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
 
-<script src="/bower_components/poly-form-pen/_lib/poly-form-pen.min.js"></script>
+<script src="/bower_components/poly-form-pen/_lib/js/poly-form-pen.min.js"></script>
 ```
 
 Then add `poly-form-pen` as a dependency for your app:

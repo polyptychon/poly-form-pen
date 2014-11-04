@@ -132,7 +132,7 @@ gulp.task('libjs', function() {
     .pipe(plumber({
       errorHandler: handleError
     }))
-    .pipe(myCoffee('_lib', 'poly-form-pen.min.js'));
+    .pipe(myCoffee('_lib/js', 'poly-form-pen.min.js'));
 
   gulp.src(dependencies)
     return browserify()
@@ -147,11 +147,8 @@ gulp.task('libjs', function() {
       .pipe(buffer())
       .pipe(gulpif(env === PRODUCTION, uglify()))
       .pipe(gulpif(env === PRODUCTION, size()))
-      .pipe(gulp.dest('_lib'));
-
-
+      .pipe(gulp.dest('_lib/js'));
 });
-
 gulp.task('libcss', function() {
   var config = { errLogToConsole: true };
   return gulp.src(SRC+'/sass/poly-form-pen.scss')
@@ -162,7 +159,11 @@ gulp.task('libcss', function() {
     .pipe(sass(config).on('error', gutil.log))
     .pipe(gulpif(env === PRODUCTION, minifyCSS()))
     .pipe(gulpif(env === PRODUCTION, size()))
-    .pipe(gulp.dest('_lib'));
+    .pipe(gulp.dest('_lib/css'));
+});
+gulp.task('libfonts', function() {
+  return gulp.src([SRC+'/fonts/**', MOCKUPS+"/fonts/*"])
+    .pipe(gulp.dest('_lib/fonts'))
 });
 
 gulp.task('clean-js', function() {
@@ -313,7 +314,7 @@ gulp.task('test', function() {
 
 gulp.task('default', ['vendor','coffee', 'sass', 'jade']);
 gulp.task('live', ['coffee', 'jade', 'sass', 'watch']);
-gulp.task('lib', ['libjs','libcss']);
+gulp.task('lib', ['libjs','libcss','libfonts']);
 gulp.task('build', function() {
   runSequence(['bootstrapFonts','fonts','images','spriteSass','autoVariables'],['coffee','vendor','sass'],['jade']);
 });
