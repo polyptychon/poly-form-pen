@@ -75,8 +75,8 @@ A simple wysiwyg editor.
 
 | Name                                      | Type     | Default   | Description |
 | :-------------------------------------    | :---     | :-----    | :-----      |
-| is-editable                               | Boolean  | true      | Toggles edit mode |
-| use-edit-button                           | Boolean  | true      | Toggles hide/show edit button |
+| is-editable                               | Boolean  | true      | enable/disable edit mode |
+| use-edit-button                           | Boolean  | true      | hide/show edit button |
 
 
 ```html
