@@ -71,6 +71,14 @@ angular.module('myApp', ['poly-form-pen']);
 
 ## Documentation
 
+A simple wysiwyg editor.
+
+| Name                                      | Type     | Default   | Description |
+| :-------------------------------------    | :---     | :-----    | :-----      |
+| is-editable                               | Boolean  | true      | Toggles edit mode |
+| use-edit-button                           | Boolean  | true      | Toggles hide/show edit button |
+
+
 ```html
 <textarea pen="true"
   class="form-control"
